@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,600;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&display=swap');
 @import url("https://rsms.me/inter/inter.css");
 
 @tailwind base;
@@ -28,7 +28,15 @@ html {
 }
 
 .head-text {
-  @apply xl:text-[10rem] text-[6rem] xl:leading-[11rem] leading-[7rem] font-black text-black;
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 500;
+  @apply xl:text-[10rem] text-[6rem] xl:leading-[11rem] leading-[7rem] text-black;
+}
+
+.head-text span{
+  font-family: 'Bodoni Moda', serif;
+  font-style: italic;
+  font-weight: 700;
 }
 
 .download-btn {
