@@ -45,10 +45,13 @@ const Home = () => {
                         type='filled'
                         title='Customize'
                         handleClick={()=> state.intro = false}
-                        customStyles='w-fit font-bold text-sm'
+                        customStyles='w-fit px-4 py-2.5 font-bold text-sm'
                     />
                 </motion.div>
 
+                <motion.footer className='w-full text-center drop-shadow-lg mt-8 text-xs' {...slideAnimation('up')}>
+                    Copyright &copy; Aarya Chopkar
+                </motion.footer>
             </motion.section>
         )}
     </AnimatePresence>
