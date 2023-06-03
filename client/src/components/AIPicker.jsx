@@ -22,7 +22,7 @@ const AIPicker = ({ prompt, setPrompt, generatingImg, handleSubmit }) => {
         ) : (
           <>
             <CustomButton 
-              type="outline"
+              type="filled"
               title="AI Logo"
               handleClick={() => handleSubmit('logo')}
               customStyles="text-xs"
