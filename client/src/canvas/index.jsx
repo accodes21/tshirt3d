@@ -1,12 +1,15 @@
 import React from 'react'
-import {Canvas} from '@react-three/fiber'
+import {Canvas, extend} from '@react-three/fiber'
 import {Environment, Center} from '@react-three/drei'
-
 import Shirt from './Shirt'
 import Backdrop from './Backdrop'
 import CameraRig from './CameraRig'
+import { OrbitControls} from "@react-three/drei";
 
+// extend({ OrbitControls });
 const CanvasModel = () => {
+  const group = React.useRef()
+
   return (
     <Canvas
       shadows
@@ -21,6 +24,7 @@ const CanvasModel = () => {
         <Backdrop/>
         <Center>
           <Shirt/>
+          <OrbitControls target={[-0.4,0,0]} />
         </Center>
       </CameraRig>
     </Canvas>
