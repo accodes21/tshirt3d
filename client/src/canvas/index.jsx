@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import {Canvas, extend} from '@react-three/fiber'
 import {Environment, Center} from '@react-three/drei'
 import Shirt from './Shirt'
@@ -8,7 +8,6 @@ import { OrbitControls} from "@react-three/drei";
 
 // extend({ OrbitControls });
 const CanvasModel = () => {
-  const group = React.useRef()
 
   return (
     <Canvas
@@ -24,7 +23,7 @@ const CanvasModel = () => {
         <Backdrop/>
         <Center>
           <Shirt/>
-          <OrbitControls target={[-0.4,0,0]} />
+          {/* <OrbitControls/> */}
         </Center>
       </CameraRig>
     </Canvas>
