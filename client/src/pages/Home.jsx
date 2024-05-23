@@ -49,9 +49,9 @@ const Home = () => {
                     />
                 </motion.div>
 
-                <motion.footer className='w-full text-center drop-shadow-lg mt-8 text-xs' {...slideAnimation('up')}>
+                {/* <motion.footer className='w-full text-center drop-shadow-lg mt-8 text-xs' {...slideAnimation('up')}>
                     Copyright &copy; Aarya Chopkar
-                </motion.footer>
+                </motion.footer> */}
             </motion.section>
         )}
     </AnimatePresence>
